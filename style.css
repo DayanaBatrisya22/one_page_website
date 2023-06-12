@@ -1,0 +1,719 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+a {
+	text-decoration: none;
+    color: lightgray;
+	transition: 0.3s ease;
+}
+
+a:hover {
+    color: black;
+}
+
+.header {
+    font-size: 4rem;
+    font-weight: 100;
+}
+.white-header {
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+.cta {
+    font-size: 1.5rem;
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: black;
+	margin: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    border-radius: 25px;
+    width: 130%;
+    text-align: center;
+    
+}
+.cta:hover {
+	color: black;
+	background-color: white;
+}
+.brand h1 {
+    font-family: 'Lalezar';
+	font-size: 2.5rem;
+	color: black;
+    margin-left: 110px;
+}
+
+.white-dot {
+    height: 9px;
+    width: 9px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 12px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    cursor: pointer;
+}
+
+.white-dot:hover {
+    background-color: black;
+}
+
+
+
+.arrow {
+    margin-left: 400px;
+
+}
+
+.right-arrow, .left-arrow {
+    flex-basis: 5%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.arrow-right, .arrow-left {
+    display: block;
+    height: 25px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+
+.arrow-right:hover , .arrow-left:hover {
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+
+.arrow-right {
+ transform: rotate(138deg);
+}
+
+.arrow-left {
+    transform: rotate(-45deg);
+}
+
+.learn-more{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-align: center;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+
+/* Header section */
+#header {
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 1vh;
+    background-color: white;
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+
+#header .nav-list {
+    display: flex;
+    font-size: 18px;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 10px;
+}
+/* End Header section */
+
+/* About section */
+#about {
+	background-color: white;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#about .about{
+	width: 100%;
+	max-width: 1200px;
+	margin-inline:auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+#about .slider {
+	background:peachpuff;
+	color: black;
+    width: 100%;
+    text-align: center;
+    height: 550px;
+    padding: 7% 0%;
+    display: flex;
+}
+
+#about .info {
+	background:peachpuff;
+	color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#about .text {
+    height: 50px;
+    width: 50%;
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+
+#about .title {
+    font-family: 'Lalezar';
+    margin: 10px;
+    padding: 10px;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+#about .line {
+    margin: 20px 0px;
+    border-bottom: 2px solid black;
+    left: 50%;
+    right: 45%;
+    position: absolute;
+}
+
+#about .professionals {
+    margin: 40px 20px 2px 20px;
+    font-size: 2rem;
+}
+
+#about .industries {
+    margin: 0px 20px 20px 20px;
+    font-size: 2rem;
+}
+
+#about .button {
+    height: 50px;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 150px;
+}
+
+#about .dot {
+    width: 4%;
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+    padding-top: 13%;
+}
+
+
+#about .learn-more{
+    width: 100%;
+    margin-top: 70px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#about .learn-more:hover {
+	color: black;
+	background-color: white;
+}
+/* End About section */
+
+/* Service section */
+#services {
+	background-color: white;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#services .services{
+	width: 100%;
+	max-width: 1200px;
+	margin-inline:auto;
+	display: flex;
+	justify-content: space-between;
+    text-align: center;
+}
+
+#services .title{
+    font-family: 'Lalezar';
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+#services .kitchen, .installation, .design{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+}
+#services .kitchen-info, .installation-info, .design-info{
+    padding: 50px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 25px;
+    text-align: start;
+}
+
+#services .kitchen-image, .installation-image, .design-image{
+    padding: 10px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    color: black;
+    margin: 25px;
+    text-align: start;
+}
+
+#services .learn-more{
+    background-color: peachpuff;
+    color: black;
+    width: 40%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+#services .learn-more:hover {
+	color: white;
+	background-color: black;
+}
+
+/* End Service section */
+
+/* Work section */
+#work {
+	background-color: white;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#work .work{
+	width: 100%;
+	max-width: 1200px;
+	margin-inline:auto;
+	display: flex;
+	justify-content: space-between;
+    
+}
+
+#work .overall {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#work .all-work {
+
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 1rem; 
+    margin-bottom: 25px;
+}
+
+#work .item-1{
+    background-color: lightgray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+#work .item-2 {
+    background-color: lightgray;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+
+#work .item-3 {
+    background-color: lightgray;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+  
+#work .item-4 {
+    background-color: lightgray;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+  
+#work .item-5 {
+    background-color: lightgray;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+  
+#work .item-6 {
+    background-color: lightgray;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+
+#work .learn-more {
+    margin-top: 100px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+#work .learn-more:hover {
+	color: black;
+	background-color: peachpuff;
+}
+
+/* End Work section */
+
+/* Blog section */
+#blog {
+	background-color: white;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#blog .blog {
+	width: 100%;
+	margin-inline:auto;
+	display: flex;
+	justify-content: space-between;
+    
+}
+
+#blog .extra {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#blog .team {
+    background-color: peachpuff;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+    width: auto;
+}
+
+#blog .details {
+    padding: 0px 150px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#blog .info {
+    margin-top: 100px;
+}
+
+#blog .staff-1 {
+    flex-basis: 50%;
+    margin: 25px 1px;
+    padding-left: 200px;
+}
+
+#blog .staff-2{
+    flex-basis: 50%;
+    margin: 25px;
+}
+
+#blog .staff-3 {
+    flex-basis: 50%;
+    margin: 25px 1px;
+    padding-right: 200px;
+}
+
+
+#blog .image {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#blog .name {
+    font-family: 'Lalezar';
+    margin-top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#blog .position {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#blog .three-dots {
+    display: flex;
+    margin-left: 48%;
+}
+
+#blog .white-dot{
+    margin: 5px;
+}
+
+#blog .feedback {
+    padding: 20px;
+    height: 600px;
+    text-align: center;
+    width: auto;
+}
+
+#blog .review {
+    padding: 0px 50px;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog .person {
+    flex-basis: 50%;
+    margin: 0px 50px;
+    text-align: right;
+    height: 150px;
+}
+
+#blog .comment {
+    flex-basis: 50%;
+    margin: 0px 50px;
+    text-align: left;
+    height: 150px;
+}
+
+#blog .logos {
+    padding: 0px 50px;
+    height: 200px;
+    margin: 0px 40px 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog .logo-1, .logo-2, .logo-3, .logo-4 {
+    background-color: lightgray;
+    flex-basis: 50%;
+    margin: 0px 15px;
+    height: 150px;
+}
+
+/* End Blog section */
+
+/* Contact section */
+
+#contact {
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#contact .contact {
+	width: 100%;
+	max-width: 1200px;
+	margin-inline:auto;
+	justify-content: space-between;
+    min-height: 0vh;
+}
+
+#contact .all-contact {
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 600px;
+}
+
+#contact .details, .comments {
+    color: white;
+    flex-basis: 50%;
+    margin: 0px 20px;
+    height: 500px;
+    padding: 60px 0px;
+}
+
+#contact .contacts {
+    height: 55%;
+}
+
+#contact .address, .phone-number, .email{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 30px 10px;
+    display: flex;
+}
+
+#contact .symbol {
+    width: 25px;
+    margin-right: 5px;
+}
+
+#contact .icons {
+    margin: 0px 10px ;
+    font-size: 2rem;
+    text-align: left;
+    display: flex;
+}
+
+#contact .icon-1,.icon-2,.icon-3,.icon-4,.icon-5 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+#contact .comments {
+    text-align: start;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    outline: none;
+    color: gray;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: white;
+    color: darkgray;
+    padding: 14px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 25px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+    font-size: 1.2rem;
+}
+  
+input[type=submit]:hover {
+    background-color: peachpuff;
+    color: black;
+}
+
+/* End Contact section */
+
+/* Footer section */
+
+#footer {
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+#footer .footer {
+	min-height: 13vh;
+    background-color: white;
+	transition: 0.3s ease background-color;
+    display: block;
+    text-align: center;
+}
+
+#footer .brand {
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#footer .rights {
+    color: gray;
+    padding-top: 5px;
+    font-size: 1rem;
+}
+/* End Footer section */
