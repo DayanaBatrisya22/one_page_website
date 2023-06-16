@@ -94,25 +94,14 @@ p {
 }
 
 .right-arrow, .left-arrow {
-    flex-basis: 5%;
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
 }
 
-.arrow-right, .arrow-left {
-    display: block;
-    height: 21px;
-    border-top: 2px solid gray;
-    border-left: 2px solid gray;
-	transition: 0.3s ease;
-	transition-property: background-color, color;
-}
-
-.arrow-right:hover , .arrow-left:hover {
-    border-top: 3px solid white;
-    border-left: 3px solid white;
+.right-arrow .fa-solid, .left-arrow .fa-solid {
+    font-size: 45px;
 }
 
 .arrow-right {
@@ -152,7 +141,6 @@ p {
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 1300px;
 	padding: 0 10px;
 }
 
@@ -491,18 +479,15 @@ p {
 }
 
 #blog .staff-1 {
-    flex-basis: 50%;
     margin: 25px 1px;
     padding-left: 200px;
 }
 
 #blog .staff-2{
-    flex-basis: 50%;
     margin: 25px;
 }
 
 #blog .staff-3 {
-    flex-basis: 50%;
     margin: 25px 1px;
     padding-right: 200px;
 }
@@ -523,8 +508,6 @@ p {
 #blog .name hr {
     height:1px;
     width: 50px;
-    margin-left: 500px;
-    margin-top: 5px;
     border-width:0;
     background-color:black;
 }
