@@ -505,12 +505,7 @@ p {
     background-color:black;
 }
 
-#blog .name hr {
-    height:1px;
-    width: 50px;
-    border-width:0;
-    background-color:black;
-}
+
 
 #blog .image {
     height: 100px;
@@ -533,6 +528,19 @@ p {
 #blog .position {
     margin-top: 10px;
     font-weight: 400;
+}
+
+#blog .line {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#blog .line hr {
+    height:1px;
+    width: 50px;
+    border-width:0;
+    background-color:black;
+    margin-left: 94%;
 }
 
 #blog .three-dots {
