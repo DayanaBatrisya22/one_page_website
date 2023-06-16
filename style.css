@@ -13,7 +13,7 @@ html {
 
 a {
 	text-decoration: none;
-    color: lightgray;
+    color: gray;
 	transition: 0.3s ease;
 }
 
@@ -88,7 +88,6 @@ p {
 }
 
 
-
 .arrow {
     margin-left: 400px;
 
@@ -104,7 +103,7 @@ p {
 
 .arrow-right, .arrow-left {
     display: block;
-    height: 25px;
+    height: 21px;
     border-top: 2px solid gray;
     border-left: 2px solid gray;
 	transition: 0.3s ease;
@@ -222,16 +221,16 @@ p {
     font-weight: 900;
 }
 
-#about .line {
-    margin: 20px 0px;
-    border-bottom: 2px solid black;
-    left: 50%;
-    right: 45%;
-    position: absolute;
+#about hr {
+    height:2px;
+    width: 70px;
+    margin-left: 44%;
+    border-width:0;
+    background-color:black;
 }
 
 #about .professionals {
-    margin: 40px 20px 2px 20px;
+    margin: 20px 20px 2px 20px;
     font-size: 2rem;
 }
 
@@ -299,6 +298,13 @@ p {
     padding: 20px;
     margin: 10px;
     display: flex;
+}
+
+#services hr {
+    height:1px;
+    width: 50px;
+    border-width:0;
+    background-color:black;
 }
 #services .kitchen-info, .installation-info, .design-info{
     padding: 50px;
@@ -501,6 +507,27 @@ p {
     padding-right: 200px;
 }
 
+#blog .image-and-line {
+    width: 200px;
+}
+
+#blog .image-and-line hr {
+    height:1px;
+    width: 50px;
+    margin-left: 37%;
+    margin-top: 15%;
+    border-width:0;
+    background-color:black;
+}
+
+#blog .name hr {
+    height:1px;
+    width: 50px;
+    margin-left: 500px;
+    margin-top: 5px;
+    border-width:0;
+    background-color:black;
+}
 
 #blog .image {
     height: 100px;
@@ -668,7 +695,7 @@ input:focus::placeholder {
 input[type=submit] {
     width: 30%;
     background-color: white;
-    color: darkgray;
+    color: black;
     padding: 14px 20px;
     margin-top: 30px;
     border: none;
